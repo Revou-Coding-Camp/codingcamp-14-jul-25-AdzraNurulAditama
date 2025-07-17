@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="img/passfoto-adzra.jpg" alt="adzra logo" class="logo-img">
+        <nav class="nav-menu">
+            <a href="#home">Home</a>
+            <a href="#our-profile">Our Profile</a>
+            <a href="https://www.figma.com/design/gRZkxYhEZB641M45Qfx7nl/Portofolio?node-id=51-40&t=cQxlFS4Gb9NTND1d-1"
+                target="_blank">
+                Portofolio</a>
+            <a href="#message-us">Message Us</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home" class="home">
+            <h2>Hi <span id="user-name">...</span>, Welcome To Website</h2>
+            <p class="paragraf1">
+                I'm Adzra, who is passionate about UI/UX design and web development,
+                currently pursuing Information Systems at Telkom University. I enjoy
+                learning, collaborating, and creating digital solutions.
+            </p>
+            <img src="img/motion-grafis.jpg" alt="UI/UX" class="logo-img2">
+        </section>
+
+        <!-- Our Profile Section -->
+        <section id="our-profile" class="our-profile">
+            <h2>Our Profile</h2>
+            <div class="profile-content">
+                <img src="img/passfoto-adzra.jpg" alt="Adzra's Photo" class="profile-photo">
+                <div class="profile-text">
+                    <p class="paragraf2">Education 🎓</p>
+                    <ul class="paragraf3">
+                        <li>SMAN 4 Karawang - MIPA (2021-2024)</li>
+                        <li>Telkom University - D3 Information Systems (2024-present)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Message Us Section -->
+        <section id="message-us" class="message-us">
+            <h2>Message Us</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nama :</label>
+                    <input type="text" id="name" placeholder="Nama" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthdate">Tanggal Lahir :</label>
+                    <input type="date" id="birthdate" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Jenis Kelamin :</label>
+                    <div class="gender-options">
+                        <label><input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki</label>
+                        <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Pesan :</label>
+                    <textarea id="message" placeholder="Pesan" required></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Data Anda</h3>
+                <p id="modalText"></p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer">Created by Adzra Nurul Aditama</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
