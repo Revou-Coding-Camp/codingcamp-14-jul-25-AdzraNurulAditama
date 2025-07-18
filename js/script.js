@@ -1,7 +1,8 @@
 window.addEventListener("DOMContentLoaded", function () {
-  let nama = prompt("Masukkan nama Anda:");
-  if (!nama) {
-    nama = "Pengunjung";
+  let nama = "";
+
+  while (!nama) {
+    nama = prompt("Masukkan nama Anda (wajib diisi):");
   }
   document.getElementById("user-name").textContent = nama;
 });
